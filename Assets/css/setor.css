@@ -1,0 +1,23 @@
+
+
+
+.checagem {
+    display: flex;
+    flex-direction: row;
+}
+
+.hide {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked~.hide {
+    display: block
+}
+
+input[type="checkbox"]:not(:checked)~.hide {
+    display: none
+}

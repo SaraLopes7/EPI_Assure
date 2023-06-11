@@ -33,7 +33,7 @@
 
       function redirectToPage(value) {
         if (value === "equipamento") {
-          window.open('https://epi-assure.netlify.app/usuario/estudo', '_self');
+          window.open('https://epi-assure.netlify.app/usuario/estudos', '_self');
         } else if (value === "setor") {
           window.open('https://epi-assure.netlify.app/usuario/setor', '_self');
         }
@@ -49,7 +49,7 @@
   <main>
     <div id="filtro">
       <select onchange="redirectToPage(this.value)">
-        <option value="equipamento" selected>Equipamento</option>
+        <option value="equipamento">Equipamento</option>
         <option value="cargo" selected>Cargo</option>
         <option value="setor">Setor</option>
       </select>
@@ -111,6 +111,15 @@
         </div>
       </div>
       <hr>
+      <div class="equipamento" onclick="abreMascara();">
+        <img src="../Assets/images/Icones/mascara-medica.webp" alt="" class="icone-equip">
+        <div class="info">
+          <h4>Máscara</h4>
+          <p>Qual a finalidade do uso da máscara?
+          As máscaras funcionam como uma barreira física para a liberação dessas gotículas no ar quando há tosse, espirros e até
+          mesmo durante conversas.</p>
+        </div>
+      </div>
       <div class="equipamento" onclick="abreMascara();">
         <img src="../Assets/images/Icones/mascara-medica.webp" alt="" class="icone-equip">
         <div class="info">

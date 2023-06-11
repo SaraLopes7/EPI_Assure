@@ -7,6 +7,7 @@
     <meta name="description" content="Descubra mais sobre os setores da empresa e sobre cada cargo dentro dele">
     <meta name="theme-color" content="#FFDE59"/>
     <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="../Assets/css/setor.css">
     <link rel="stylesheet" href= "../Assets/css/estudos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="../Assets/images/AppIcons/favicon.ico" type="image/x-icon">
@@ -83,7 +84,7 @@
         <img src="../Assets/images/Icones/botas.webp" alt="" class="icone-equip">
         <div class="info">
           <h4>Botas</h4>
-          <p>Proteção para pés contra impactos, quedas, cortes e umidade.</p>
+          <p></p>
         </div>
       </div>
       <hr>
@@ -120,6 +121,36 @@
           mesmo durante conversas.</p>
         </div>
       </div>
+      <div class="equipamento" onclick="abreMascara();">
+        <img src="../Assets/images/Icones/mascara-medica.webp" alt="" class="icone-equip">
+        <div class="info">
+          <h4>Máscara</h4>
+          <p>Qual a finalidade do uso da máscara?
+          As máscaras funcionam como uma barreira física para a liberação dessas gotículas no ar quando há tosse, espirros e até
+          mesmo durante conversas.</p>
+        </div>
+      </div>
+      <div class="equipamento" onclick="abreMascara();">
+        <img src="../Assets/images/Icones/mascara-medica.webp" alt="" class="icone-equip">
+        <div class="info">
+          <h4>Máscara</h4>
+          <p>Qual a finalidade do uso da máscara?
+          As máscaras funcionam como uma barreira física para a liberação dessas gotículas no ar quando há tosse, espirros e até
+          mesmo durante conversas.</p>
+        </div>
+      </div>
+      <div class="checagem">
+        <img src="../Assets/images/Icones/usuario.webp" alt="imagem do usuário" class="imagem-user">
+        <div class="info-funcionario" onclick="toggleInformacoes(this)">
+            <input type="checkbox" class="btn-b">
+            <label for="btn-b">Nome do Funcionário <i class="fa fa-arrow-down"></i></label>
+            <div class="hide">
+                <p>Cargo</p>
+                <p>* Equiapemento Duvidoso</p>
+            </div>
+        </div>
+        <i class="fa fa-times-circle fa-2x" id="error"></i>
+    </div>
     </div>  
   </main> 
   <footer>
